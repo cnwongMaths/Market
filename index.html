@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>逛街市 - 線上朗讀繪本</title>
+  <style>
+    body {
+      font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+      background-color: #f5f5f7;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+    .sentence {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      line-height: 1.6;
+      color: #333;
+    }
+    audio {
+      width: 100%;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>逛街市</h1>
+
+  <!-- 主圖與完整課文 -->
+  <div class="card">
+    <img src="market_image.jpg" alt="逛街市插圖">
+    <div class="content">
+      <p class="sentence">今天，我們去街市買水果，小販在菜檔賣蔬菜，小販在魚檔賣魚類，顧客在肉檔買肉類，我們去水果檔買提子和香蕉，街市購物樂趣多。</p>
+      <audio controls src="audio_full.m4a"></audio>
+    </div>
+  </div>
+
+  <!-- 分句朗讀區塊（範例：第一句） -->
+  <div class="card">
+    <div class="content">
+      <p class="sentence">今天，我們去街市買水果</p>
+      <audio controls src="audio_sentence1.m4a"></audio>
+    </div>
+  </div>
+
+  <!-- 可以複製上方區塊，依序放入其他句子的文字與對應語音檔 -->
+
+</body>
+</html>
